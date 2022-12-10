@@ -1,16 +1,16 @@
- const conditionalSum = function(values, condition) {
+const conditionalSum = function (values, condition) {
   let number = 0;
 
-  for (let value = 0 ; value < values.length; value++) {
+  for (let value = 0; value < values.length; value++) {
     if (values[value] % 2 === 0 && condition === 'even') {
       number += values[value];
     } else
 
-    if (values[value] % 2 !== 0 && condition === 'odd') {
-      number += values[value];
-    }
+      if (values[value] % 2 !== 0 && condition === 'odd') {
+        number += values[value];
+      }
   }
-  
+
   return number;
 };
 
