@@ -13,7 +13,7 @@ There are  elements, two positive, two negative and one zero. Their ratios are ,
 
 function plusMinus(arr) {
   // Write your code here
-  let positiveNumbers = 0;
+ /*  let positiveNumbers = 0;
   let negativeNumbers = 0;
   let numberOfZeros = 0;
 
@@ -27,10 +27,18 @@ function plusMinus(arr) {
         if (arr[i] === 0) {
           numberOfZeros++;
         }
-  }
-  console.log((positiveNumbers / arr.length).toFixed(6));
-  console.log((negativeNumbers / arr.length).toFixed(6));
-  console.log((numberOfZeros / arr.length).toFixed(6));
+  } */
+
+  let positiveNumbersArr = arr.filter((num) => num > 0);
+  let negativeNumbersArr = arr.filter((num) => num < 0);
+  let zeroArr = arr.filter((num) => num === 0);
+
+
+  console.log((positiveNumbersArr.length / arr.length).toFixed(6));
+  console.log((negativeNumbersArr.length / arr.length).toFixed(6));
+  console.log((zeroArr.length / arr.length).toFixed(6));
 }
 
 plusMinus([1, 1, 0, -1, -1]);
+
+
