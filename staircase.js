@@ -23,6 +23,8 @@ function reverseRightStaircase(n) {
 
     console.log(' '.repeat(i) + '#'.repeat(n - i));
   }
+
+  // Additional logic to solve the same challenge
   /* for (let i = n; i > 0; i--) {
     console.log(' '.repeat(n - i) + '#'.repeat(i));
   } */
@@ -33,6 +35,10 @@ function reverseLeftStaircase(n) {
 
     console.log('#'.repeat(n - i) + ' '.repeat(i));
   }
+   /*  for (let i = n; i > 0; i--) {
+      console.log(' '.repeat(i) + ' '.repeat(n - i));
+    }
+  */
 }
 
 rightStaircase(4);
