@@ -7,3 +7,4 @@ function digitize(n) {
 }
 
 console.log(digitize(54321));
+console.log(digitize(34567));
