@@ -5,8 +5,11 @@ function stringRepeat(n, s) {
     return s.repeat(n);
   } else {
     return '';
-  } 
- 
+  }
+  /*  var str = "";
+   for (var i = 0; i < n; i++)
+     str += s;
+   return str; */
 }
 
-console.log(stringRepeat(6, "I") );
+console.log(stringRepeat(6, "I"));
