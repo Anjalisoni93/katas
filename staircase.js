@@ -6,22 +6,19 @@
 
 function rightStaircase(n) {
   for (let i = 1; i <= n; i++) {
-
-    console.log(' '.repeat(n - i) + '#'.repeat(i));
+    console.log(" ".repeat(n - i) + "#".repeat(i));
   }
 }
 
 function leftStaircase(n) {
   for (let i = 1; i <= n; i++) {
-
-    console.log('#'.repeat(i) + ' '.repeat(n - i));
+    console.log("#".repeat(i) + " ".repeat(n - i));
   }
 }
 
 function reverseRightStaircase(n) {
   for (let i = 0; i < n; i++) {
-
-    console.log(' '.repeat(i) + '#'.repeat(n - i));
+    console.log(" ".repeat(i) + "#".repeat(n - i));
   }
 
   // Additional logic to solve the same challenge
@@ -32,19 +29,18 @@ function reverseRightStaircase(n) {
 
 function reverseLeftStaircase(n) {
   for (let i = 0; i < n; i++) {
-
-    console.log('#'.repeat(n - i) + ' '.repeat(i));
+    console.log("#".repeat(n - i) + " ".repeat(i));
   }
-   /*  for (let i = n; i > 0; i--) {
+  /*  for (let i = n; i > 0; i--) {
       console.log(' '.repeat(i) + ' '.repeat(n - i));
     }
   */
 }
 
 rightStaircase(4);
-console.log('-----');
+console.log("-----");
 leftStaircase(4);
-console.log('-----');
+console.log("-----");
 reverseRightStaircase(4);
-console.log('-----');
+console.log("-----");
 reverseLeftStaircase(4);
