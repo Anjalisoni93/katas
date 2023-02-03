@@ -16,7 +16,16 @@ function DNAStrand(dna) {
   return result;
 }
 
-
+function DNAStrand (dna) {
+  return dna.split('').map(i => {
+    return {
+      A: 'T',
+      T: 'A',
+      G: 'C',
+      C: 'G'
+    } [i]
+  }).join('');
+}
 
 console.log(DNAStrand("AAAA"));
 console.log(DNAStrand("ATTGC"));
